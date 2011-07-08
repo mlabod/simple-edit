@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Simple HTML5 Text Editor</title>
+		<link rel="stylesheet" href="editor.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="editor.jquery.js"></script>
+		
+		<style type="text/css">
+			body {background:#f0f0f0; font-family:"Arial", "Helvetica", Sans-Serif;color:#333}
+			h1 {text-align:center; font-size:18px}
+			.main {width:400px;margin:100px auto}
+		</style>
+		
+		<script type="text/javascript">
+			$(function(){
+				$("div.text").texteditor();
+			});
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<h1>Simple HTML5 Editor</h1>
+			<div class="text"></div>
+			<span></span>
+		</div>
+	</body>
+</html>

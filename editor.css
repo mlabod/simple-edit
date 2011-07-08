@@ -1,0 +1,26 @@
+/* Simple HTML5 Editor */
+
+.texteditor {position:relative}
+
+	.texteditor .textarea {
+	margin-top:5px;
+	padding:10px;
+	background:white;
+	border-radius:3px;
+	border:1px solid #ccc;
+	box-shadow:inset 0px 0px 5px #ddd}
+	
+	.textarea:focus {
+	outline:none}
+	
+	button.italic, button.bold {
+	cursor:pointer;
+	padding:5 10px;
+	background:#f0f0f0;
+	border-radius:3px;
+	border:1px solid #ccc;
+	box-shadow:0px 0px 5px #ddd}
+	
+	button.italic:hover, button.bold:hover {
+	background:#e8e8e8;
+	box-shadow:0px 0px 5px #bbb}
