@@ -1,6 +1,6 @@
 /* Simple Text Editor jQuery Plugin*/
 
-$.fn.texteditor = function(options) {
+$.fn.simpleEdit = function(options) {
     
     options = $.extend({
     	defaultText: "Lorem Ipsum Dolor Lorem Ipsum...",
