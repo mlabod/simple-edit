@@ -13,7 +13,7 @@
 	.textarea:focus {
 	outline:none}
 	
-	button.italic, button.bold {
+	button {
 	cursor:pointer;
 	padding:5 10px;
 	background:#f0f0f0;
@@ -21,6 +21,6 @@
 	border:1px solid #ccc;
 	box-shadow:0px 0px 5px #ddd}
 	
-	button.italic:hover, button.bold:hover {
+	button:hover {
 	background:#e8e8e8;
 	box-shadow:0px 0px 5px #bbb}
