@@ -3,22 +3,19 @@
 $.fn.simpleEdit = function(options) {
     
     // Save Text
-    textcontainer = this;
-   	textcontent   = this.text();
-   	
-   	// Options
+    var textcontainer = this;
+    var textcontent   = this.text();
+    var textarea      = $("<div class='textarea'/>");
+
+    // Options
     options = $.extend({
-    	defaultText: textcontent,
+        defaultText: textcontent
     }, options);
     
     // Initiate
     textcontainer.text("").addClass("texteditor");
-   	textarea = $("<div class='textarea'/>");
-   	textcontainer.append(textarea);
-    textarea.attr({
-      contenteditable: 'true',
-      designmode: 'on'})
-    .text(options.defaultText);
+    textcontainer.append(textarea);
+    textarea.attr({contenteditable: 'true', designmode: 'on'}).text(options.defaultText);
     
     // Editor Buttons
     textcontainer.prepend("<button class='list'>list</button>");
@@ -37,5 +34,4 @@ $.fn.simpleEdit = function(options) {
 	$(".list").live("click", function(){
 		document.execCommand('insertunorderedlist', false, null);
 	});
-	
 };
